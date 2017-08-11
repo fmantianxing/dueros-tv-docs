@@ -69,34 +69,7 @@
     }
 ```
 # 播放节目
-## 示例1 CCTV1高清的新闻联播
-### DA输出
-- domain:
-    - tv.live
- - intent
-     - "tv.live.program.search"
- - slot
-     - "channel_name"："CCTV1"
-     - "resolution": "高清"
-     - "program_name": "新闻联播"
-### Bot输出
-```
-    {
-        "header": {
-            "namespace": "tv.command.live",
-            "name": "ReplayProgram",
-            "message_id" : "message-id-123"
-        },
-        "payload": {
-            "channel_name": "CCTV1高清",
-            "channel_code": "cctv1_hd",
-            "program_name": "新闻联播"，
-            "extend": {}
-        }
-    }
-```
-
-## 示例2 回看CCTV1昨天的节目
+## 示例1 回看CCTV1昨天的节目
 ### DA输出
 - domain:
     - tv.live
@@ -123,7 +96,7 @@
     }
 ```
 
-## 示例3 我想看9频道昨天的节目
+## 示例2 我想看9频道昨天的节目
 ###DA输出
 - domain:
     - tv.live
@@ -150,7 +123,7 @@
     }
 ```
 
-## 示例4 回看节目
+## 示例3 回看节目
 ### DA输出
 - domain:
     - tv.live
